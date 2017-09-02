@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign Up Here</title>
+<script type="text/javascript" src="confirmpass.js"></script>  
+<link rel="stylesheet" type="text/css" href="sign_up_form.css">
+</head>
+<body>
+<form action="MyServlet" method="post">
+	<div class="headcontainer">
+		<h1><b>Sign Up</b></h1>
+	</div>
+	<div class="container">
+		
+		<label><b>Choose your username </b></label>
+		<input type="text" placeholder="Enter Username Here: e.g. starboy" name="uname" required="required" >
+
+		<label><b>Create a Password </b></label>
+		<input type="password" placeholder="Enter Your Password Here: " name="pswd" required="required" id="password">
+		
+		<label><b>Confirm Password </b></label>
+		<input type="password" placeholder="Confirm Your Password Here: " name="pswd" required="required" id="confirm_password">
+
+
+		<button type="submit" onClick="validatePassword()">Sign Up</button>
+		<input type="checkbox" checked="checked">I'm an Indian
+	</div>
+
+	<div class="container" style="background-color:#CCCCCC">	
+	<button type="button" class="cancelbtn">Cancel</button>
+	<span class="pswd"><a href="#">Need Help!</a></span>
+	</div>
+</form>
+</body>
+</html>
